@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Fundo cinza claro para suavidade */
+    color: #333;
+  }
+  
+  /* Container principal */
+  .contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Título */
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Mensagem de status */
+  .message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .message.success {
+    border: 1px solid #28a745;
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .message.error {
+    border: 1px solid #dc3545;
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Campos do formulário */
+  .contact-form-container form div {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s, box-shadow 0.3s;
+    background: #f9f9f9;
+  }
+  
+  .contact-form-container input:focus,
+  .contact-form-container textarea:focus {
+    border: 1px solid #888;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+    outline: none;
+  }
+  
+  /* Botão de enviar */
+  .contact-form-container button {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .contact-form-container button:hover {
+    background: #555;
+    transform: scale(1.02);
+  }
+  
+  .contact-form-container button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Animação */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
